@@ -30,6 +30,5 @@ public class SynchronizationBotTests {
                 .isDisplayed(By.id("revealed"));
 
         driver.quit();
-
     }
 }

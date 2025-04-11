@@ -5,6 +5,7 @@ import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
 
 import java.time.Duration;
+import java.util.Objects;
 
 public class Bot {
     private final Wait<WebDriver> wait;
@@ -18,7 +19,7 @@ public class Bot {
                 .ignoring(ElementNotInteractableException.class);
     }
 
-    public Bot sendKeys (By by, String text) {
+    public Bot sendKeys (By by, CharSequence text) {
         wait.until(d ->{
             d.findElement(by).clear();
             d.findElement(by).sendKeys(text);
@@ -39,5 +40,10 @@ public class Bot {
 
     public boolean isDisplayed (By by) {
         return wait.until(d -> d.findElement(by).isDisplayed());
+    }
+
+    public String getAttribute(By firstResultLink, String attribute) {
+//        return wait.until(d -> d.findElement(firstResultLink).getDomAttribute(attribute));
+        return wait.until(d -> Objects.requireNonNull(d.findElement(firstResultLink).getDomAttribute(attribute)));
     }
 }
