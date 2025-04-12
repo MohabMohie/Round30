@@ -124,3 +124,50 @@ login.clickLoginButton();
 // option 2: create a single method to perform all actions
 login.login(validUsername, validPassword);
 ```
+
+## Minimum and extra passing criteria for any technical task:
+
+### Minimum passing criteria:
+<table><tr><td>
+
+- Locators:
+    - No r-click copy xpath
+    - No absolute xpath
+    - Knows how to write a proper xpath
+- Design:
+  - Test Workflow Management
+    - @Before / @After for Methods and Classes
+    - @Test doesn't use priority attribute
+  - Page Object Model
+    - No duplicate code
+    - No hardcoded values
+    - Using business-level methods (login, register, etc.)
+    - Using By objects (no @FindBy, no WebElement objects)
+  - Synchronization 
+    - No Thread.sleep
+    - No implicit wait ***
+- ReadME.md -> explain your project and how to execute it
+- Source Control
+- Folder Structure:
+  - src/test/java -> for test files
+  - src/test/resources -> for test data files
+  - src/main/java -> for POM classes
+  - pom.xml -> for maven dependencies, with the latest stable version for each
+
+</td></tr></table>
+
+### Extra score:
+<table><tr><td>
+
+- Allure reporting
+- Test Data Externalization
+- No warnings in the code
+- Abstraction for Test Cases and/or Test Scenarios
+- Log4j logging
+- Fluent Design with POM
+- Abstraction for POM classes
+- Proper scoping / Access Modifiers
+- GitHub Actions pipeline to run the tests and host the report
+- Bot pattern with Custom explicit wait
+
+</td></tr></table>
