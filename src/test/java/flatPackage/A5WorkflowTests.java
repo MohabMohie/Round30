@@ -2,7 +2,7 @@ package flatPackage;
 
 import org.testng.annotations.*;
 
-public class WorkflowTests {
+public class A5WorkflowTests {
 
     @Test
     public void test1(){

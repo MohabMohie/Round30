@@ -5,12 +5,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class SynchronizationCustomExplicitWaitTests {
+public class A3SynchronizationCustomExplicitWaitTests {
     @Test
     public void implicitWaitTest() throws InterruptedException {
         // driver initialization

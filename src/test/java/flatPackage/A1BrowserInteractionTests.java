@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class BrowserInteractionTests {
+public class A1BrowserInteractionTests {
 
     /**
      * This test will follow these steps using Selenium WebDriver

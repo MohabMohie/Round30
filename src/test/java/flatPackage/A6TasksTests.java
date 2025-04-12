@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
-public class TasksTests {
+public class A6TasksTests {
     WebDriver driver;
 
     @Test

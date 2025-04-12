@@ -5,7 +5,7 @@ import org.openqa.selenium.Keys;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class ModularTasksTests extends TestCase {
+public class A7ModularTasksTests extends TestCase {
     @Test
     public void navigateToDuckuckGoAndCheckPageTitle(){
         driver.navigate().to("https://duckduckgo.com/");
@@ -35,22 +35,6 @@ public class ModularTasksTests extends TestCase {
         driver.navigate().to("https://duckduckgo.com/");
 
         // When I search for 'Selenium WebDriver'
-
-//        By.xpath("//*[@id='searchbox_input']");
-//        By.cssSelector("#searchbox_input");
-//        By.id("searchbox_input");
-
-//        //option 1
-//        By searchbox = By.id("searchbox_input");
-//        driver.findElement(searchbox).sendKeys("Selenium WebDriver" + Keys.ENTER);
-//
-//        //option 2
-//        WebElement searchboxInput = driver.findElement(By.id("searchbox_input"));
-//        searchboxInput.sendKeys("Selenium WebDriver" + Keys.ENTER);
-//
-//        //option 3
-//        driver.findElement(By.id("searchbox_input")).sendKeys("Selenium WebDriver" + Keys.ENTER);
-
         By searchbox = By.id("searchbox_input");
         bot.sendKeys(searchbox, "Selenium WebDriver" + Keys.ENTER);
 
