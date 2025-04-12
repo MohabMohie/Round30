@@ -28,6 +28,11 @@ public class Login extends Page {
         return new Products(driver);
     }
 
+    public Login invalidLogin(String username, String password) {
+        login(username, password);
+        return this;
+    }
+
     public String getErrorMessageText() {
         return driver.findElement(errorMessage).getText();
     }

@@ -55,5 +55,20 @@ public class B1SauceLabsLoginTests extends TestCase {
         Assert.assertEquals(errorMessageText, "Epic sadface: Sorry, this user has been locked out.");
     }
 
+    @Test
+    public void fluentTest1(){
+        String lockedOutUser = "locked_out_user";
+        String validPassword = "secret_sauce";
+
+        // Steps
+        var errorMessageText = new Login(driver)
+                .navigate()
+                .invalidLogin(lockedOutUser, validPassword)
+                .getErrorMessageText();
+
+        // Checkpoint
+        Assert.assertEquals(errorMessageText, "Epic sadface: Sorry, this user has been locked out.");
+    }
+
 
 }
