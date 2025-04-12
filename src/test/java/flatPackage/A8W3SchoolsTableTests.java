@@ -16,7 +16,7 @@ public class A8W3SchoolsTableTests extends TestCase {
         // Given I am on the w3schools tables page
         driver.navigate().to("https://www.w3schools.com/html/html_tables.asp");
 
-        // When I check the country for the company Ernst Handel
+        // TODO: When I check the country for the company Ernst Handel
         String country = bot.getText(By.xpath(""));
 
         // Then I should see Austria
