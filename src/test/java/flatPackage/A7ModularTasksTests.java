@@ -40,8 +40,6 @@ public class A7ModularTasksTests extends TestCase {
 
         // Then the first result should be 'https://www.selenium.dev/documentation/webdriver/'
         By firstResultLink = By.xpath("(//a[@data-testid='result-extras-url-link'])[1]");
-        //TODO: which is better? writing an index in the xpath or using the findElements method?
-
         String firstResultLinkText = bot.getAttribute(firstResultLink, "href");
         Assert.assertEquals(firstResultLinkText, "https://www.selenium.dev/documentation/webdriver/");
     }

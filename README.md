@@ -32,6 +32,9 @@ Automatest: Test Automation training round 30 practice project
 - pick the most stable values
 - use as few attributes as possible
 - use as few nodes as possible
+- absolute xpath == r-click copy full xpath -> NEVER USE THIS
+- relative xpath == starts with `//` -> ALWAYS write it yourself
+- dynamic xpath -> use it with `INDEX` or `TEXT`
 - when you have spaces in your `class` attribute, never use `[@class='']`
 - try to avoid using `text` to identify elements (unless your application supports only one language)
 
@@ -56,4 +59,68 @@ searchboxInput.sendKeys("Selenium WebDriver" + Keys.ENTER);
 
 //option 3
 driver.findElement(By.id("searchbox_input")).sendKeys("Selenium WebDriver" + Keys.ENTER);
+```
+
+### The two options for dealing with multiple element instances:
+```java
+ // option 1 - using index in the xpath
+driver.findElement(By.xpath("(//a[@data-testid='result-extras-url-link'])[2]")).getDomAttribute("href");
+// option 2 - using findElements method
+driver.findElements(By.xpath("//a[@data-testid='result-extras-url-link']")).get(1).getDomAttribute("href");
+```
+
+### Creating a dynamic xpath:
+```java
+private String getResultLinkUsingBy(int index) {
+    By allResultLinks = By.xpath("(//a[@data-testid='result-extras-url-link'])["+index+"]");
+    return driver.findElement(allResultLinks).getDomAttribute("href");
+}
+```
+
+### Fetching element information:
+```java
+driver.findElement(locator).getText();
+driver.findElement(locator).getAttribute("value"); // DO NOT USE THIS AS IT WILL BE REMOVED
+driver.findElement(locator).getDomAttribute("value");
+driver.findElement(locator).getDomProperty("value");
+```
+
+## Page Object Model (POM) Design Pattern:
+
+### The two options for creating POM reusable methods:
+
+#### In the POM Class:
+```java
+// option 1: create a separate method for each line of code
+public void enterUsername(String username) {
+    driver.findElement(usernameInput).sendKeys(username);
+}
+public void enterPassword(String password) {
+    driver.findElement(passwordInput).sendKeys(password);
+}
+public void agreeToTermsAndConditions(){
+    driver.findElement(loginButton).click();
+}
+public void clickLoginButton() {
+    driver.findElement(loginButton).click();
+}
+
+// option 2: create a single method to perform all actions
+public void login(String username, String password) {
+    driver.findElement(usernameInput).sendKeys(username);
+    driver.findElement(passwordInput).sendKeys(password);
+    driver.findElement(loginButton).click();
+    driver.findElement(loginButton).click();
+}
+```
+
+#### In the Test Class:
+```java
+// option 1: create a separate method for each line of code
+login.enterUsername(validUsername);
+login.enterPassword(validPassword);
+login.clickLoginButton();
+
+// option 2: create a single method to perform all actions
+login.login(validUsername, validPassword);
 ```

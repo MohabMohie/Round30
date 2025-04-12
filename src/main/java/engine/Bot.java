@@ -5,7 +5,6 @@ import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
 
 import java.time.Duration;
-import java.util.Objects;
 
 public class Bot {
     private final Wait<WebDriver> wait;
@@ -39,11 +38,26 @@ public class Bot {
     }
 
     public boolean isDisplayed (By by) {
-        return wait.until(d -> d.findElement(by).isDisplayed());
+        return wait.until(d -> {
+            boolean isDisplayed = d.findElement(by).isDisplayed();
+            System.out.println("Element display state: " + isDisplayed);
+            return isDisplayed;
+        });
     }
 
     public String getAttribute(By firstResultLink, String attribute) {
-//        return wait.until(d -> d.findElement(firstResultLink).getDomAttribute(attribute));
-        return wait.until(d -> Objects.requireNonNull(d.findElement(firstResultLink).getDomAttribute(attribute)));
+        return wait.until(d -> {
+            String attributeValue = d.findElement(firstResultLink).getDomAttribute(attribute);
+            System.out.println("The value of the " + attribute + " attribute is: " + attributeValue);
+            return attributeValue;
+        });
+    }
+
+    public String getText(By xpath) {
+        return wait.until(d -> {
+            String text = d.findElement(xpath).getText();
+            System.out.println("Text: " + text);
+            return text;
+        });
     }
 }

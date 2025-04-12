@@ -1,4 +1,4 @@
-package flatPackage;
+package com.saucedemo.tests;
 
 import engine.Bot;
 import org.openqa.selenium.WebDriver;
@@ -8,8 +8,8 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 public abstract class TestCase {
-    WebDriver driver;
-    Bot bot;
+    protected WebDriver driver;
+    protected Bot bot;
 
     @BeforeMethod
     public void beforeMethod(){
