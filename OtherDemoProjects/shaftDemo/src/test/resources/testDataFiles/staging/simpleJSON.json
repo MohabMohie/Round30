@@ -1,0 +1,16 @@
+{
+  "global" : {
+    "baseURL": ""
+  },
+  "test001" : {
+    "username": "",
+    "password": ""
+  },
+  "test002" : {
+    "username": "",
+    "password": ""
+  },
+  "searchQuery": "SHAFT_Engine",
+  "expectedTitle": "DuckDuckGo",
+  "unexpectedInFirstResult": "Nope"
+}

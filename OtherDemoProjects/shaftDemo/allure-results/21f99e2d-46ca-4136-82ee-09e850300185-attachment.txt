@@ -1,0 +1,195 @@
+[INFO ] 2025-04-26 12:55:46.781 [] ReportManager - Initializing Project Structure...
+[INFO ] 2025-04-26 12:55:46.947 [main] ReportManager - 
+[0;7m------------------------------------------------------------------------------------------------------------------------------------------------
+                                                    Powered by [1mSHAFT v.9.2.20250409[22m                                                    
+                                   Visit SHAFT's user guide [4mhttps://shafthq.github.io/[24m to learn more                                   
+------------------------------------------------------------------------------------------------------------------------------------------------
+[0m
+[INFO ] 2025-04-26 12:55:46.983 [] ReportManager - Checking for engine updates...
+[INFO ] 2025-04-26 12:55:47.067 [main] ReportManager - Initializing Allure Reporting Environment...
+[INFO ] 2025-04-26 12:55:47.546 [] ReportManager - Initializing Summary Reporting Environment...
+[INFO ] 2025-04-26 12:55:48.349 [] ReportManager - Loaded OpenCV "opencv_java490".
+[INFO ] 2025-04-26 12:55:49.680 [main] ReportManager - TestNG run detected...
+[INFO ] 2025-04-26 12:55:50.333 [main] Utils - [TestNG] Running:
+  C:\Users\Mohab\AppData\Local\JetBrains\IntelliJIdea2024.3\temp-testng-customsuite.xml
+
+[INFO ] 2025-04-26 12:55:50.420 [main] ReportManager - 
+[0;7m------------------------------------------------------------------------------------------------------------------------------------------------
+                                             Starting execution of suite setup configuration method                                             
+                                          'com.shaft.listeners.internal.ConfigurationHelper.suiteSetup'                                          
+------------------------------------------------------------------------------------------------------------------------------------------------
+[0m
+[INFO ] 2025-04-26 12:55:50.511 [main] ReportManager - Initializing Properties...
+[INFO ] 2025-04-26 12:55:50.836 [main] ReportManager - 
+[0;7m------------------------------------------------------------------------------------------------------------------------------------------------
+                                             Starting execution of before class configuration method                                             
+                                                  'com.duckduckgo.ui.TestScenario.beforeClass'                                                  
+------------------------------------------------------------------------------------------------------------------------------------------------
+[0m
+[DEBUG] 2025-04-26 12:55:52.077 [] BasicClientConnectionManager - Get connection for route {s}->https://api.github.com:443
+[DEBUG] 2025-04-26 12:55:52.134 [] DefaultClientConnectionOperator - Connecting to api.github.com:443
+[DEBUG] 2025-04-26 12:55:52.675 [] RequestAddCookies - CookieSpec selected: ignoreCookies
+[DEBUG] 2025-04-26 12:55:52.682 [] RequestAuthCache - Auth cache not set in the context
+[DEBUG] 2025-04-26 12:55:52.683 [] RequestTargetAuthentication - Target auth state: UNCHALLENGED
+[DEBUG] 2025-04-26 12:55:52.685 [] RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+[DEBUG] 2025-04-26 12:55:52.686 [] DefaultClientConnection - Sending request: GET /repos/ShaftHQ/SHAFT_ENGINE/releases/latest HTTP/1.1
+[DEBUG] 2025-04-26 12:55:52.687 [] wire -  >> "GET /repos/ShaftHQ/SHAFT_ENGINE/releases/latest HTTP/1.1[\r][\n]"
+[DEBUG] 2025-04-26 12:55:52.690 [] wire -  >> "Accept: */*[\r][\n]"
+[DEBUG] 2025-04-26 12:55:52.691 [] wire -  >> "Host: api.github.com[\r][\n]"
+[DEBUG] 2025-04-26 12:55:52.694 [] wire -  >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG] 2025-04-26 12:55:52.695 [] wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.2)[\r][\n]"
+[DEBUG] 2025-04-26 12:55:52.697 [] wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[DEBUG] 2025-04-26 12:55:52.698 [] wire -  >> "[\r][\n]"
+[DEBUG] 2025-04-26 12:55:52.699 [] headers - >> GET /repos/ShaftHQ/SHAFT_ENGINE/releases/latest HTTP/1.1
+[DEBUG] 2025-04-26 12:55:52.700 [] headers - >> Accept: */*
+[DEBUG] 2025-04-26 12:55:52.700 [] headers - >> Host: api.github.com
+[DEBUG] 2025-04-26 12:55:52.701 [] headers - >> Connection: Keep-Alive
+[DEBUG] 2025-04-26 12:55:52.702 [] headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.2)
+[DEBUG] 2025-04-26 12:55:52.702 [] headers - >> Accept-Encoding: gzip,deflate
+[DEBUG] 2025-04-26 12:55:52.940 [] wire -  << "HTTP/1.1 200 OK[\r][\n]"
+[DEBUG] 2025-04-26 12:55:52.946 [] wire -  << "Date: Sat, 26 Apr 2025 09:55:52 GMT[\r][\n]"
+[DEBUG] 2025-04-26 12:55:52.946 [] wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+[DEBUG] 2025-04-26 12:55:52.947 [] wire -  << "Cache-Control: public, max-age=60, s-maxage=60[\r][\n]"
+[DEBUG] 2025-04-26 12:55:52.947 [] wire -  << "Vary: Accept,Accept-Encoding, Accept, X-Requested-With[\r][\n]"
+[DEBUG] 2025-04-26 12:55:52.949 [] wire -  << "ETag: W/"934d5dbbcdb9149c5b7f56322f4bf32efd326836d214929ca7638b18cca3b483"[\r][\n]"
+[DEBUG] 2025-04-26 12:55:52.949 [] wire -  << "Last-Modified: Wed, 09 Apr 2025 21:00:45 GMT[\r][\n]"
+[DEBUG] 2025-04-26 12:55:52.949 [] wire -  << "X-GitHub-Media-Type: github.v3; format=json[\r][\n]"
+[DEBUG] 2025-04-26 12:55:52.950 [] wire -  << "x-github-api-version-selected: 2022-11-28[\r][\n]"
+[DEBUG] 2025-04-26 12:55:52.951 [] wire -  << "Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset[\r][\n]"
+[DEBUG] 2025-04-26 12:55:52.951 [] wire -  << "Access-Control-Allow-Origin: *[\r][\n]"
+[DEBUG] 2025-04-26 12:55:52.952 [] wire -  << "Strict-Transport-Security: max-age=31536000; includeSubdomains; preload[\r][\n]"
+[DEBUG] 2025-04-26 12:55:52.952 [] wire -  << "X-Frame-Options: deny[\r][\n]"
+[DEBUG] 2025-04-26 12:55:52.953 [] wire -  << "X-Content-Type-Options: nosniff[\r][\n]"
+[DEBUG] 2025-04-26 12:55:52.953 [] wire -  << "X-XSS-Protection: 0[\r][\n]"
+[DEBUG] 2025-04-26 12:55:52.954 [] wire -  << "Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin[\r][\n]"
+[DEBUG] 2025-04-26 12:55:52.954 [] wire -  << "Content-Security-Policy: default-src 'none'[\r][\n]"
+[DEBUG] 2025-04-26 12:55:52.954 [] wire -  << "Content-Encoding: gzip[\r][\n]"
+[DEBUG] 2025-04-26 12:55:52.955 [] wire -  << "Server: github.com[\r][\n]"
+[DEBUG] 2025-04-26 12:55:52.955 [] wire -  << "Accept-Ranges: bytes[\r][\n]"
+[DEBUG] 2025-04-26 12:55:52.955 [] wire -  << "X-RateLimit-Limit: 60[\r][\n]"
+[DEBUG] 2025-04-26 12:55:52.955 [] wire -  << "X-RateLimit-Remaining: 58[\r][\n]"
+[DEBUG] 2025-04-26 12:55:52.957 [] wire -  << "X-RateLimit-Reset: 1745664886[\r][\n]"
+[DEBUG] 2025-04-26 12:55:52.961 [] wire -  << "X-RateLimit-Resource: core[\r][\n]"
+[DEBUG] 2025-04-26 12:55:52.963 [] wire -  << "X-RateLimit-Used: 2[\r][\n]"
+[DEBUG] 2025-04-26 12:55:52.963 [] wire -  << "Content-Length: 1553[\r][\n]"
+[DEBUG] 2025-04-26 12:55:52.963 [] wire -  << "X-GitHub-Request-Id: EBBE:A7AB8:182BE0F:191017E:680CADA7[\r][\n]"
+[DEBUG] 2025-04-26 12:55:52.964 [] wire -  << "[\r][\n]"
+[DEBUG] 2025-04-26 12:55:52.967 [] DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+[DEBUG] 2025-04-26 12:55:52.968 [] headers - << HTTP/1.1 200 OK
+[DEBUG] 2025-04-26 12:55:52.968 [] headers - << Date: Sat, 26 Apr 2025 09:55:52 GMT
+[DEBUG] 2025-04-26 12:55:52.969 [] headers - << Content-Type: application/json; charset=utf-8
+[DEBUG] 2025-04-26 12:55:52.969 [] headers - << Cache-Control: public, max-age=60, s-maxage=60
+[DEBUG] 2025-04-26 12:55:52.969 [] headers - << Vary: Accept,Accept-Encoding, Accept, X-Requested-With
+[DEBUG] 2025-04-26 12:55:52.970 [] headers - << ETag: W/"934d5dbbcdb9149c5b7f56322f4bf32efd326836d214929ca7638b18cca3b483"
+[DEBUG] 2025-04-26 12:55:52.970 [] headers - << Last-Modified: Wed, 09 Apr 2025 21:00:45 GMT
+[DEBUG] 2025-04-26 12:55:52.970 [] headers - << X-GitHub-Media-Type: github.v3; format=json
+[DEBUG] 2025-04-26 12:55:52.971 [] headers - << x-github-api-version-selected: 2022-11-28
+[DEBUG] 2025-04-26 12:55:52.971 [] headers - << Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset
+[DEBUG] 2025-04-26 12:55:52.971 [] headers - << Access-Control-Allow-Origin: *
+[DEBUG] 2025-04-26 12:55:52.972 [] headers - << Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+[DEBUG] 2025-04-26 12:55:52.972 [] headers - << X-Frame-Options: deny
+[DEBUG] 2025-04-26 12:55:52.972 [] headers - << X-Content-Type-Options: nosniff
+[DEBUG] 2025-04-26 12:55:52.972 [] headers - << X-XSS-Protection: 0
+[DEBUG] 2025-04-26 12:55:52.973 [] headers - << Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+[DEBUG] 2025-04-26 12:55:52.973 [] headers - << Content-Security-Policy: default-src 'none'
+[DEBUG] 2025-04-26 12:55:52.973 [] headers - << Content-Encoding: gzip
+[DEBUG] 2025-04-26 12:55:52.974 [] headers - << Server: github.com
+[DEBUG] 2025-04-26 12:55:52.974 [] headers - << Accept-Ranges: bytes
+[DEBUG] 2025-04-26 12:55:52.974 [] headers - << X-RateLimit-Limit: 60
+[DEBUG] 2025-04-26 12:55:52.975 [] headers - << X-RateLimit-Remaining: 58
+[DEBUG] 2025-04-26 12:55:52.976 [] headers - << X-RateLimit-Reset: 1745664886
+[DEBUG] 2025-04-26 12:55:52.977 [] headers - << X-RateLimit-Resource: core
+[DEBUG] 2025-04-26 12:55:52.977 [] headers - << X-RateLimit-Used: 2
+[DEBUG] 2025-04-26 12:55:52.978 [] headers - << Content-Length: 1553
+[DEBUG] 2025-04-26 12:55:52.978 [] headers - << X-GitHub-Request-Id: EBBE:A7AB8:182BE0F:191017E:680CADA7
+[DEBUG] 2025-04-26 12:55:53.004 [] RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+[DEBUG] 2025-04-26 12:55:53.006 [] wire -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0xb5]Xko[0x9c]8[0x14][0xfd]+h[0xaa]j[0xa5]([0xc0][0xc0][0xbc][0x91][0xaa][0xbe][0x92][0xb4]Q[0x95]Tm#[0xad]v[0xdb]jd[0xc0][0x3]N[0x0]S[0xdb][0xcc]$[0x8d][0xfa][0xdf][0xf7][0xd8]0Oe"
+[DEBUG] 2025-04-26 12:55:53.007 [] wire -  << "[0x93]6C>[0x84]1[0x4][0xce][0xbd][0xbe][0x8f]sl[0xdf]v*[0x91]u[0x82]N[0xaa]T)[0x3][0xd7]%%s[0x12][0xa6][0xd2]*t"[0x9e][0xbb][0x82][0x96]\[0xba]_R2S[0xef]?[0xb9]_[0xde][0xbf]>[0xb9][0x98][0x1e][0x9f][0xbf];=?[0xc6][0xbf]2J$[0x95][0xae][0xef]y[0xbd][0xf1]h[0xe0]u;[0x87][0x1d]"%Ur[0xda][0x1e][0xa6][#[0x2][0xba]*3N[0xe2][0x1d][0xe8][0xfa][0xa1]|[0xb4][0xcb][\r][0xfc][0xed][0xcb][0x82][0xe4][0xf4]0#![0xcd]~[0xc1]V[0xaa][0xf2]l[0xc7][0xd2]FP[0xee][0xf][0x87]"[0x89];q|[0xc7][0xef][0xfa][0x83]n[0xbf];[0x1][0x1c][0x8b];[0xc1]*J[0x8]R[0xa5]R.:[0xc1]m'[0xe3][0x9]+[0x10][0xfd][0x1a][0xdc]&[0x91]b[0xbc][0x90]_C[0xae][0xbe]7[0x9f][0xf5][0xbd][0xf1]d[0xec][0x8f][0xfd][0xc3]N[0xc1]c:[0xd5]H[0x9d][0xb3][0xa3][0xb3][0xe1][0xa7]|[0xd2]=?:[0xee][0xbc]Hn>[0x1e][0x9d][0xbe][0xd0][0xb1][0x9f][0x13]E[0xc4]n[0xec][0xcd][0xc3]e[0x80]*IE[0xc4][0xb]E[0xb]e[0xd2][0xcb][\n]"
+[DEBUG] 2025-04-26 12:55:53.007 [] wire -  << "[0xd7][0x1b][0xf4][0x86][0xe3][0x97][0xf3][0x17]} $[0xa2][0xc1]0ft[0xcc][0xef][0xab][\r][\r]&[0xdd]m[0xd7][0x9f][0xf][0xde][0xc0][0xf9][0xe7][0x83][0xa3][0x7][0x83]H[0xca]r[0xf7]c|3[0xe3]Y[0xc6][0x17][0xc0][0xdd][0x9d][0xc6]vY[0xde]k[0xda]][0x81][0xac][0x0]Y[0x91][0xec][0xf][0x8][0x90][[0x97][0xab][0x94]"[0xc6][0x98][0xba][0xae][0x93][0x84][0xc9][0x87][0xaa][0xfd]~W[\r][0xc0]-[0x82]([0x15]r[0xab]!%[0xd2]%[0xe8]n[0x9d][0xef][0xb4][0xe5][0xfd][0xa0][\r][0x4][0x9c]][0x14][0xf0][0xf3][0xd6]t[0xb1][0xc1][0xae]B[0x19][0x9]V[0x9a]*[0xdb]' [@[0x0][0xe6]"![0x5][0xfb]I[0xf6][0x6][0x6][0x90][0x4][0x9e][0xa1][0x9d]}[0x1c]4[0x0][0x0][0xa2]s[0x94][0xfa]^H5[0xc2][0xad][[\n]"
+[DEBUG] 2025-04-26 12:55:53.008 [] wire -  << "6'[0xd1][0x8d][0xe][0xa3][0xa0][0x11]es[0xe4]h[0xf4][0x1d]([0x80][0xab][0x9b][0x92][0xa2][0xf9][0xde]p[0x85][0x1b][0x9d][0xe7][0xe9][0x9c][0xd1][0xc5][0xb4]y\Va[0xc6]"[0x9d]J[0xa6][0xe8][0x94][0xc4][0xb9][0xa6][0x8f][0x19][0xc9]$[0xfd][0xb5][0xc9][0x10][0x9f][0x8f][0xa7]W[0x8b][0xa3][0x8f]o[0xdf][0xd1][0x8b][0xa1][0xec][0x9f][0xe5][0xff]|[0xf6]54I[0xa6][0x9a][0xe7][0x0][0xbf]CP[0xa8][0xb9][0x84][0xaa])(!g[0x8a][0xc9][0x14]o[0xe4][0x4][0xd0][0xc0][0xbc][0xf3][0xfd]X@[0x10][0x1a][0xc3][0x87][0x9d]R[0xd0]F[0xc]V[0x8f]"A[0x89]B[0x84][0x8][0xde][0xea]h&[0xb4][0xbb]}[0xbb];[0xb9][0xf0][0xbd][0xa0][0xdb][\r][0xfc][0xde][0xbf][0x80]6s[0x91][0xe9][0xff][0xbe][0xd5][0x1f][0xe8][0xb7][0x1a][0xfe][0xf][0xbe]~[0xd7][0x13][0x10]![0xc9]v[0x99][0xf9][0xf7]%[0xab][0xf9]~[0x97][0x9e][0xb2]r/[0xd8][0xe6][0xfb]][0xd8][0x90][0xc7]7[0x98][0xfd][0xb3]g[0xd6][0xdf])QI[0xeb]mJ[0x8a][0x84][0xc6][0xdf][0x8a][0x3][0xb]y[0xe3][0xc2][0x9e][0xb1]k*[0xad][0xf0][0xc6]zu[0xc6]S[0x12][0xe2][0xc2][0xa8][0xc5][\n]"
+[DEBUG] 2025-04-26 12:55:53.008 [] wire -  << "k)[0xc6][0xf]iNYe[0x99][0xeb]Mz[0x13][\r][0x19]ASh`[0xd1][0x2]V"j[0x95][0xac][0xa4][0x19]+[0xa8][0x86][0xcf][0xc9][0x15][0xc8][0xcb]R[0x14]dc[0x89][0xaa][0xb0]f\X[0x5][0xa5]1[0x8d][0xf1][0x99]v[0xaa][0xf1][0x82][0xa4]9[0xaf][0xe2]3[0x12][\n]"
+[DEBUG] 2025-04-26 12:55:53.008 [] wire -  << "~[0xf5][0x8]G[0xfa]}[0xed]H[0xcc]#[0xb9][0xf6][0x83]IYQ[0x98][0xce][0xcb][0xc][0x15]a[0xd5][0xb3][0xdd][0xd7]NO[0xdb]yS[0xe5][0xa5][0x85][0x92]u[0x12][0xce][0x93][0x8c]:[0x91][0xb8])[0x15]w[0x14]+[0xae][0x2]}[0xb1]f[0x82][0xe7][0x96][0xe7]xC[0xa7]k)[0xae]G#[0x8c]t[0xb8]cZ[0xd2]"&[0x90][0xaa][0xc7][0xcc][0xd2][Y[0x7]]9D[0x96]4R[0x97]A[0xf3][0xbb][0xa0]dN[0xc5][0xd2]6[0xfa][0xcc]w[0xbc][0xda]:[0xc6][0xbd][0x16][0xac]w[0xb7][0xe6][0x9e][0xb3]Hp[0xc9]g[0xca][0x91]?[0xc0][0x2][0x2][0xb6][0x83]\bl_[0xc6]a[0xd4][0xb8][0xe1];[0x13][0xa7][0xeb]\[\n]"
+[DEBUG] 2025-04-26 12:55:53.009 [] wire -  << "[0xea]y6[0x9a]U[0x13][0x8a]q[0x9][0xae]u[0x97][0xff]h[0xc1]3S[0x86]&+:.9[0x8f][0xae][0x98][0xe2]A[0xf3]kG([0xcf][0xda][0x9f][0xc1]*%f[0xe4][0xb5]`z[0xb4]e[0xfa][0xb2]*[0x98][\n]"
+[DEBUG] 2025-04-26 12:55:53.009 [] wire -  << "[0xcc][0xd5][0xe]Q[0x3][0xa6][0x10]`[0xcb][0xaf][0xb][0xc1][0x8c][0xda][0xb0]:[0xd4]VO[0xc0]t[0x95][0xa0][0xae]\[0x90]$A[0xe6][0xe7]$c[0xb1]QB3[0xaf][0xf]7[0x82]aM#[0xcf]IB[0xd3][0xc7]T[0xdb][0xe0][0xae]ZO*[0xac][0xd4][0x2]s[0xad]g[0xd7][0xeb]9}[0xa7]k#[0xc7]:[0xb3][0xe6]n`[0xee][0xf6].[0xf7][0x81][0xbf]][0xee]%[0x89]R4[0x1b][0xa4][0x2][0x8b][0x88][0xa0][0xf9][0xb5]#9_[0xf5][o[0xd5]op[0xa9][0x5][0x7][0xd6][0xfd][0xc6][0xf8]r[0xa5][0x1f][0xf2][0x82]%DD[0x8c][0x4][0xb][0x1a][0xc6][0x10]g*rR [0xc8]M[0xef][\r]P[0xf3]=[0x1d][0xb]t+^[0x98][0xbe];a[0xd7][0xd6]v[0xa3]{[0xb0][0xd3][0xf4][0xf5]^$>Xw[0xcf][0x6][0xa7][0xdd][0x9d][0xe7]:[0xb3][0xcb]<[0xf][[0xca][0xf3][0xba][0x87][0xb4][0x3][0xb4]$[0xb9][0x93]R[0x92][0xd1][0x82]Uy[0xb0][0x1a][0xd9][0x8]wSr[0xce][0xc0][0xe9][0x9b]j[0xc3]`[0xd0]B[0x9e][0xd7][0x95][0xae][0xf9]Cb[0xa9]M[0xa7]?V[0xc3]`[0xf9][0xcc][0xbe]\[0x15]~[0xdf][0xf1]An[0xda][0x8d][0xbe][0xd3]k'[0xd3]ku1[0xfc]^[0x17]|[0xe]Z/[0x1c][0x89]N[0x9f]1[0xe8][0xec]r`kQ[0x85][0xb6][0x1a][0x8a][0xd1][0x81][0xf0][0x97][0x11]i[0x81][0xeb][0x87]w[0xb6]^[0xed]I[0x99]U[0xd8];[0xca][0xc0][0xdc][0xd9]+w[0xea][0xc7]O[0xe4][0xce][0xb6][0xf0][0x95][0x82]_B[0xf9]2[0x9e][0x87][0xfc]*[0xa8]V[0x1c]0vz[0xc3]Ft1[0x1c][0xef]_[0x1d][0xc3][0xb5][0xee][0xfd][0x1][0xb][0xd4][0xcd][0xdf][0xb0]@[0xb][0x94]?[0xbc][0xb3]6J[0xce][0x2][0xfc][0xd9][0x9c]_[0xe7][0xd9]Rm4[0xf7][0xc1]0z[0xa4][\r][0xad][0x19][0x8e]W,[0x8c][0xe9]GUT[0xe5]![0xa4]~9[0xd8]h[0x88][0x91][0xe3]c[0xa5][0xa3]Mc[0xa4][0x15]oo[0x5][0x18]n[0xab][0xeb][0x3][0xc2]nLCb[Yk[\r][0x8d][0xc4][0x9a]5[0xc5][0x9d][0xd3].Y[0xc4][0xf5][0x81][0x6]6+K[0xe2][0x82][0xf9][0xaf][0x89][0xe9]N'6)[0xe0][0x9][0xac][0x9b]E[0xf5]i[0x8e]v[0x9b]S[0x8b]^G[0xd4][0xec][0xdf]-[0xac][0xdb]c,[0xf0][0x13][0xbd][0xa6]x][0x1f][0x1c]9[0x86][0x16][0xf7][0xde]O[0xc][0xff]@[0x8a]j[0xf1]YJ[0xd1][0xa8][0x1d])[0x1a][0xad]{}[0x83][0x81][0x9b].{[0x9a][0xfe][0x1a]mS[0xed]o[0x8b][0x8f][0x91][0x9c]Z|[0xbc]6zmd86[0xd4][0x5][0x8f][0x15][0x8d][0xd4][0x89][0x6][0xfa][0xe6]v][0xe7][0xfb][0x14]"
+[DEBUG] 2025-04-26 12:55:53.010 [] wire -  << "Gx[0xa2] Y[0x9d]p[0x14][0x82]UB[0xb2]5[0xf9][0xec][0x9d][0xfc][0x11][0x18][0xee][[0x81]M[0xeb]96[0x9]o[0xd1]Z[0x82][0x85][0x95][0xe2]Bj[0xbf]^[0x9d]m[0xed][0xdc]r[0x12]c[0xb9][0x99]R[0x86]5[0x17][0x13]Ra7[0xd6][0xbc][0xaf][0xfd][0xfe][0xf3][0x8d][0xac][0xde]?[0xc2][0xcc][0xc1][0x9][0xf6][0xb5][0xcd]n[0x19]'[0xa4][0x7][0x7][0xc1]o[0xef][0x88][0xb1]r)[0x9][0x16][0xe3][0x13][0xc7][0xab][0xf]`{^[0xcf]q[0xf4][0x12]m[0xf3]<6[0xc7][0xa1][0x90]9[0x2][0x8b]xU[0xe0][0x84][0xa2][0xff][0xeb]?[0x8d][0x86][0x88]$[0x7][0x17][0x0][0x0]"
+[DEBUG] 2025-04-26 12:55:53.010 [] RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[DEBUG] 2025-04-26 12:55:53.527 [] BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@6712f84
+[DEBUG] 2025-04-26 12:55:53.528 [] BasicClientConnectionManager - Connection can be kept alive indefinitely
+[INFO ] 2025-04-26 12:55:53.809 [main] ReportManager - 
+[0;7m------------------------------------------------------------------------------------------------------------------------------------------------
+                                        Starting Execution: '1 out of 5' test cases in the current suite                                        
+                                               Test Method: 'com.duckduckgo.ui.TestScenario.login'                                               
+------------------------------------------------------------------------------------------------------------------------------------------------
+[0m
+[INFO ] 2025-04-26 12:55:53.832 [main] ReportManager - Successfully created attachment 'SHAFT Engine Logs - Current Method log: login'
+[INFO ] 2025-04-26 12:55:53.833 [main] ReportManager - 
+[0;7m------------------------------------------------------------------------------------------------------------------------------------------------
+                                    Finished Execution of Test Method: 'com.duckduckgo.ui.TestScenario.login'                                    
+                                                              Test Status: 'Passed'                                                              
+------------------------------------------------------------------------------------------------------------------------------------------------
+[0m
+[INFO ] 2025-04-26 12:55:54.234 [main] ReportManager - 
+[0;7m------------------------------------------------------------------------------------------------------------------------------------------------
+                                        Starting Execution: '2 out of 5' test cases in the current suite                                        
+                                           Test Method: 'com.duckduckgo.ui.TestScenario.addItemToCart'                                           
+------------------------------------------------------------------------------------------------------------------------------------------------
+[0m
+[INFO ] 2025-04-26 12:55:54.241 [main] ReportManager - Successfully created attachment 'SHAFT Engine Logs - Current Method log: addItemToCart'
+[INFO ] 2025-04-26 12:55:54.244 [main] ReportManager - 
+[0;7m------------------------------------------------------------------------------------------------------------------------------------------------
+                                Finished Execution of Test Method: 'com.duckduckgo.ui.TestScenario.addItemToCart'                                
+                                                              Test Status: 'Passed'                                                              
+------------------------------------------------------------------------------------------------------------------------------------------------
+[0m
+[INFO ] 2025-04-26 12:55:54.257 [main] ReportManager - 
+[0;7m------------------------------------------------------------------------------------------------------------------------------------------------
+                                        Starting Execution: '3 out of 5' test cases in the current suite                                        
+                                          Test Method: 'com.duckduckgo.ui.TestScenario.confirmPayment'                                          
+------------------------------------------------------------------------------------------------------------------------------------------------
+[0m
+[INFO ] 2025-04-26 12:55:54.272 [main] ReportManager - Successfully created attachment 'SHAFT Engine Logs - Current Method log: confirmPayment'
+[INFO ] 2025-04-26 12:55:54.273 [main] ReportManager - 
+[0;7m------------------------------------------------------------------------------------------------------------------------------------------------
+                               Finished Execution of Test Method: 'com.duckduckgo.ui.TestScenario.confirmPayment'                               
+                                                              Test Status: 'Failed'                                                              
+------------------------------------------------------------------------------------------------------------------------------------------------
+[0m
+[INFO ] 2025-04-26 12:55:54.320 [main] ReportManager - 
+[0;7m------------------------------------------------------------------------------------------------------------------------------------------------
+                                        Starting Execution: '4 out of 5' test cases in the current suite                                        
+                                    Test Method: 'com.duckduckgo.ui.TestScenario.confirmShippingInformation'                                    
+------------------------------------------------------------------------------------------------------------------------------------------------
+[0m
+[INFO ] 2025-04-26 12:55:54.326 [main] ReportManager - Successfully created attachment 'SHAFT Engine Logs - Current Method log: confirmShippingInformation'
+[INFO ] 2025-04-26 12:55:54.327 [main] ReportManager - 
+[0;7m------------------------------------------------------------------------------------------------------------------------------------------------
+                         Finished Execution of Test Method: 'com.duckduckgo.ui.TestScenario.confirmShippingInformation'                         
+                                                             Test Status: 'Skipped'                                                             
+------------------------------------------------------------------------------------------------------------------------------------------------
+[0m
+[INFO ] 2025-04-26 12:55:54.341 [main] ReportManager - 
+[0;7m------------------------------------------------------------------------------------------------------------------------------------------------
+                                        Starting Execution: '5 out of 5' test cases in the current suite                                        
+                                            Test Method: 'com.duckduckgo.ui.TestScenario.placeOrder'                                            
+------------------------------------------------------------------------------------------------------------------------------------------------
+[0m
+[INFO ] 2025-04-26 12:55:54.346 [main] ReportManager - Successfully created attachment 'SHAFT Engine Logs - Current Method log: placeOrder'
+[INFO ] 2025-04-26 12:55:54.348 [main] ReportManager - 
+[0;7m------------------------------------------------------------------------------------------------------------------------------------------------
+                                 Finished Execution of Test Method: 'com.duckduckgo.ui.TestScenario.placeOrder'                                 
+                                                             Test Status: 'Skipped'                                                             
+------------------------------------------------------------------------------------------------------------------------------------------------
+[0m
+[INFO ] 2025-04-26 12:55:54.361 [main] ReportManager - 
+[0;7m------------------------------------------------------------------------------------------------------------------------------------------------
+                                             Starting execution of after class configuration method                                             
+                                                   'com.duckduckgo.ui.TestScenario.afterClass'                                                   
+------------------------------------------------------------------------------------------------------------------------------------------------
+[0m
+[INFO ] 2025-04-26 12:55:54.728 [main] ReportManager - 
+[0;7m------------------------------------------------------------------------------------------------------------------------------------------------
+                                           Starting execution of engine tear down configuration method                                           
+                                        'com.shaft.listeners.internal.ConfigurationHelper.engineTearDown'                                        
+------------------------------------------------------------------------------------------------------------------------------------------------
+[0m
+[INFO ] 2025-04-26 12:55:54.736 [main] ReportManager - Successfully created attachment 'SHAFT Engine Logs - Execution log'

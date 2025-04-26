@@ -1,0 +1,78 @@
+name: E2E Tests
+
+on:
+  pull_request:
+    branches: [ main ]
+  schedule:
+    - cron: '00 1 * * *'
+  workflow_dispatch:
+
+jobs:
+  Ubuntu_Firefox:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 21
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'zulu'
+          cache: 'maven'
+
+      - name: Run tests
+        run: mvn test "-DtargetBrowserName=firefox" "-DheadlessExecution=true"
+
+      - name: Upload Allure Report as Pipeline Artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: Ubuntu_Firefox_Allure
+          path: "allure-report/*.html"
+
+  Ubuntu_Chrome:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 21
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'zulu'
+          cache: 'maven'
+
+      - name: Run tests
+        run: mvn test "-DtargetBrowserName=chrome" "-DheadlessExecution=true"
+
+      - name: Upload Allure Report as Pipeline Artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: Ubuntu_Chrome_Allure
+          path: "allure-report/*.html"
+
+  MacOS_Safari:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 21
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'zulu'
+          cache: 'maven'
+
+      - name: Run tests
+        run: mvn test "-DtargetBrowserName=safari" "-DbaseURL=www.uat.com"
+
+      - name: Upload Allure Report as Pipeline Artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: MacOS_Safari_Allure
+          path: "allure-report/*.html"
